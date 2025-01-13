@@ -1,0 +1,50 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+  
+  .delivery-location {
+    font-size: 18px;
+  }
+  
+  .location {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    border-radius: 50px;
+  }
+  
+  .google-map-input {
+    margin-right: 20px;
+  }

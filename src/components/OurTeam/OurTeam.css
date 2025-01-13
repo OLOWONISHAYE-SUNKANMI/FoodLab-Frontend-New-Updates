@@ -1,0 +1,48 @@
+.our-team {
+    background: blue;
+    width: 100%;    
+    height: 80vh;
+    border-radius: 10px;
+}
+.our-team__header {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.our-team__header h1 {
+    color: #fff;
+    font-style: Capitalize;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.our-team__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.our-team__content__card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.our-team__content__card h4,
+.our-team__content__card h5 {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.our-team__content__card p {
+    color: #fff;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,155 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border: none; /* Ensure no border is added */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+  padding: 10px;
+}
+
+.navbar a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.navbar .active {
+  border-bottom: none; /* Ensure no border is added to active link */
+}
+
+.menu-open {
+    display: block;
+    animation: slideIn 0.3s forwards;
+  }
+  
+  .menu-closed {
+    display: none;
+    animation: slideOut 0.3s forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+/* Navbar.css */
+/* Navbar.css */
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; /* Ensure it’s above other content */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  width: 80%; /* This makes it larger */
+  max-width: 1000px; /* Max width to avoid too large a modal */
+  animation: modalEnter 0.5s ease-out; /* Adding smooth animation */
+}
+
+.search-modal-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-modal-container input {
+  padding: 12px;
+  font-size: 1.2rem;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.search-modal-container button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-modal-container button:hover {
+  background-color: #0056b3;
+}
+
+.menu-items-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid for the items */
+  gap: 20px;
+}
+
+.menu-item-card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item-card:hover {
+  transform: translateY(-10px);
+}
+
+.menu-item-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menu-item-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Animation for modal */
+@keyframes modalEnter {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+
+@media (max-width: 767px) {
+   .logo {
+    width : 80px;
+   }
+}
